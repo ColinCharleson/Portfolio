@@ -5,43 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colin Charleson</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-              <a class="navbar-brand" href="#">Colin Charleson</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav nav-pills">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Simulations</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Twin-Twin Training Simulation</a></li>
-                      <li><a class="dropdown-item" href="#">Fire Safety Simulation</a></li>
-                    </ul>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Game Projects</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Neolocity</a></li>
-                      <li><a class="dropdown-item" href="#">Forgotten Abyss</a></li>
-                      <li><a class="dropdown-item" href="#">Prison Escape (WIP)</a></li>
-                      <li><a class="dropdown-item" href="#">Neolocity 2D</a></li>
-                      <li><a class="dropdown-item" href="#">Pirate Games</a></li>
+                      <li><a class="dropdown-item" href="Neolocity.html">Neolocity</a></li>
+                      <li><a class="dropdown-item" href="PrisonEscape.html">Prison Escape</a></li>
+                      <li><a class="dropdown-item" href="ForgottenAbyss.html">Forgotten Abyss</a></li>
+                      <li><a class="dropdown-item" href="Neolocity2D.html">Neolocity 2D</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Game Jams</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Super Bubble Fish</a></li>
-                      <li><a class="dropdown-item" href="#">Thread of Eternity</a></li>
-                      <li><a class="dropdown-item" href="#">Rooted Colonies</a></li>
+                      <li><a class="dropdown-item" href="RootedColonies.html">Rooted Colonies</a></li>
+                      <li><a class="dropdown-item" href="PirateGames.html">Pirate Games</a></li>
+                      <li><a class="dropdown-item" href="SuperBubbleFish.html">Super Bubble Fish</a></li>
+                      <li><a class="dropdown-item" href="ThreadOfEternity.html">Thread of Eternity</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Simulations</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="FireSafety.html">Fire Safety Simulation</a></li>
+                      <li><a class="dropdown-item" href="TTTS.html">Twin-Twin Training Simulation</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -51,9 +51,31 @@
     </header>
     <main>
       <div class="container">
+        <div class="text-center my-4">
+          <h1>Colin Charleson</h1>
+          <h4 class="text-muted">Game Designer</h4>
+          <p>Hi! my name is Colin, I've been creating games for over 5 years  and I recently completed my Game Development degree at Ontario Tech University. Over the years, I've worked with Unity and Unreal Engine, prototyping and building games to refine my skills. I’m passionate about experimenting with mechanics and creating engaging, immersive experiences.
+            
+            </p>
+          <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="https://www.linkedin.com/in/colin-charleson/" target="_blank" class="btn btn-primary">
+                LinkedIn
+            </a>
+            <a href="https://colinchar.itch.io/" target="_blank" class="btn btn-primary">
+                Itch.io
+            </a>
+            <a href="mailto:colincharleson@yahoo.com" class="btn btn-primary">
+                Email
+            </a>
+        </div>
+        </div>
+      </div>
+      
+      <div class="container">
         <div class="row">
           <!-- First Carousel: 5 Slides -->
           <div class="col-md-4">
+            <br><h3 class="text-center mb-3">Game Projects</h3>
             <div id="carousel1" class="carousel slide" data-bs-ride="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -67,11 +89,26 @@
                         Date: 2023<br>
                         Neolocity is an open world game where players have to use their parkour and combat skills to save the city.
                       </p>
-                      <button class="btn btn-primary">Details</button>
+                      <button class="btn btn-primary">Learn More</button>
                     </div>
                   </div>
                 </div>
                 <!-- Repeat for 5 slides -->
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="images/PrisonEscape.gif" class="card-img-top" alt="Prison Escape Gameplay Gif">
+                    <div class="card-body">
+                      <h5 class="card-title">Prison Escape</h5>
+                      <p class="card-text">
+                        Platform: PC<br>
+                        Genre: Puzzle<br>
+                        Date: 2025 (Work in progress)<br>
+                        Prison Escape is an 2 player coop game where players need to communicate to solve puzzles to break out.
+                      </p>
+                      <button class="btn btn-primary">Learn More</button>
+                    </div>
+                  </div>
+                </div>
                 <div class="carousel-item">
                   <div class="card">
                     <img src="images/ForgottenAbyss.gif" class="card-img-top" alt="Forgotten Abyss Gameplay Gif">
@@ -83,22 +120,7 @@
                         Date: 2023<br>
                         Forgotten Abyss is a Dungeon Crawler where players have to fight their way through a series of mazes.
                       </p>
-                      <button class="btn btn-primary">Details</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card">
-                    <img src="images/PrisonEscape.gif" class="card-img-top" alt="Prison Escape Gameplay Gif">
-                    <div class="card-body">
-                      <h5 class="card-title">Prison Escape</h5>
-                      <p class="card-text">
-                        Platform: PC<br>
-                        Genre: Puzzle<br>
-                        Date: 2025<br>
-                        Prison Escape is an 2 player coop game where players need to communicate to solve puzzles to break out.
-                      </p>
-                      <button class="btn btn-primary">Details</button>
+                      <button class="btn btn-primary">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -113,22 +135,7 @@
                         Date: 2021<br>
                         Neolocity is a platformer where players traverse the rooftops of skyscrapers while fighting robots.
                       </p>
-                      <button class="btn btn-primary">Details</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card">
-                    <img src="images/PirateGames.gif" class="card-img-top" alt="Pirate Games Gameplay Gif">
-                    <div class="card-body">
-                      <h5 class="card-title">Pirate Games</h5>
-                      <p class="card-text">
-                        Platform: PC<br>
-                        Genre: Dice / Card Games<br>
-                        Date: 2024<br>
-                        Pirate games is a colletion of casual games featuring Liars Dice, Ship Captain Crew and Black Jack.
-                      </p>
-                      <button class="btn btn-primary">Details</button>
+                      <button class="btn btn-primary">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -146,6 +153,7 @@
       
           <!-- Second Carousel: 3 Slides -->
           <div class="col-md-4">
+            <br><h3 class="text-center mb-3">Game Jams</h3>
             <div id="carousel2" class="carousel slide" data-bs-ride="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -159,7 +167,22 @@
                         Date: 2023<br>
                         Rooted Colonies is a fast paced strategy city builder.
                       </p>
-                      <button class="btn btn-primary">Details</button>
+                      <button class="btn btn-primary">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="images/PirateGames.gif" class="card-img-top" alt="Pirate Games Gameplay Gif">
+                    <div class="card-body">
+                      <h5 class="card-title">Pirate Games</h5>
+                      <p class="card-text">
+                        Platform: PC<br>
+                        Genre: Dice / Card Games<br>
+                        Date: 2024<br>
+                        Pirate games is a colletion of casual games featuring Liars Dice, Ship Captain Crew and Black Jack.
+                      </p>
+                      <button class="btn btn-primary">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -174,7 +197,7 @@
                         Date: 2025<br>
                         Super Bubble Fish is a ball rolling platformer inspired by Super Monkey ball.
                       </p>
-                      <button class="btn btn-primary">Details</button>
+                      <button class="btn btn-primary">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -189,7 +212,7 @@
                         Date: 2023<br>
                         Thread of Eternity a short puzzle platformer.
                       </p>
-                      <button class="btn btn-primary">Details</button>
+                      <button class="btn btn-primary">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -207,23 +230,10 @@
       
           <!-- Third Carousel: 2 Slides -->
           <div class="col-md-4">
+            <br><h3 class="text-center mb-3">Simulations</h3>
             <div id="carousel3" class="carousel slide" data-bs-ride="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="card">
-                    <img src="images/FireSafety.gif" class="card-img-top" alt="Twin-Twin Training Simulation Gameplay Gif">
-                    <div class="card-body">
-                      <h5 class="card-title">Twin-Twin Training Simulation</h5>
-                      <p class="card-text">
-                        Platform: Meta Quest<br>
-                        Genre: VR / Training<br>
-                        Date: 2024<br>
-                        Twin-Twin Training Simulation was developed to help surgeons practice laparoscopic procedures.</p>
-                      <button class="btn btn-primary">Details</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
                   <div class="card">
                     <img src="images/FireSafety.gif" class="card-img-top" alt="Fire Safety Simulation Gameplay Gif">
                     <div class="card-body">
@@ -234,7 +244,21 @@
                         Date: 2024<br>
                         Fire Safety Simulation is a project I worked on with a small team to help educate people.
                       </p>
-                      <button class="btn btn-primary">Details</button>
+                      <button class="btn btn-primary">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img src="images/TTTS.gif" class="card-img-top" alt="Twin-Twin Training Simulation Gameplay Gif">
+                    <div class="card-body">
+                      <h5 class="card-title">Twin-Twin Training Simulation</h5>
+                      <p class="card-text">
+                        Platform: Meta Quest / PC<br>
+                        Genre: VR / Training<br>
+                        Date: 2024<br>
+                        Twin-Twin Training Simulation was developed to help surgeons practice laparoscopic procedures.</p>
+                      <button class="btn btn-primary">Learn More</button>
                     </div>
                   </div>
                 </div>
@@ -247,44 +271,6 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </main>
-
-    <footer>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
-            <div class="container py-3">
-                <p class="copy mb-0">&copy;2025 All Rights Reserved</p>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact-us-modal">Contact Us</button>
-            </div>
-    </footer>
-    
-    <div class="modal fade" tabindex="-1" id="contact-us-modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Contact Us</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Your name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone number</label>
-                        <input type="text" class="form-control" id="phone" placeholder="Phone">
-                      </div>
-                      <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message"></textarea>
-                      </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
             </div>
           </div>
         </div>
