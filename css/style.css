@@ -10,7 +10,7 @@
     max-height: 300px;          /* Set a max height for the image */
     object-fit: cover;          /* Ensure the image covers the space without distortion */
 }
-
+  
 .carousel-item .card-body {
     padding: 15px;              /* Ensure consistent padding inside the card */
     display: flex;              /* Use flexbox to control layout */
@@ -25,8 +25,8 @@
 }
 
 /* Carousel Navigation Arrows (increased size) */
-.carousel-control-prev,
-.carousel-control-next {
+.card-controls .carousel-control-prev,
+.card-controls .carousel-control-next {
     position: absolute !important;  /* Force the arrows to be positioned absolutely */
     top: 25% !important;            /* Set them to be 25% from the top of the image */
     transform: translateY(-50%) !important;  /* Center them vertically */
@@ -35,13 +35,33 @@
     height: auto;                   /* Keep the aspect ratio of the arrows */
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the two columns */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+
 /* Optional: Adjust carousel item size for smaller screens */
 @media (max-width: 767px) {
-    .carousel-control-prev,
-    .carousel-control-next {
+    .card-controls .carousel-control-prev,
+    .card-controls .carousel-control-next {
         width: 12%;                 /* Increase width of arrows on smaller screens */
         top: 25% !important;        /* Keep them 25% down from the top of the image */
         transform: translateY(-50%) !important; /* Keep arrows centered */
+    }
+    .container {
+        flex-direction: column;
     }
 }
 
