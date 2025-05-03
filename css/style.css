@@ -1,3 +1,7 @@
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
 /* Ensure the cards are the same height */
 .carousel-item .card {
     margin: 0 auto;             /* Center the card */
@@ -69,3 +73,31 @@ hr.solid {
     }
 }
 
+@media (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color: white;
+        z-index: 9999;
+        max-width: 100vw; /* Prevent the dropdown from extending beyond the viewport */
+        overflow-x: auto; /* Allow horizontal scrolling if necessary */
+        word-wrap: break-word; /* Ensure words wrap properly */
+    }
+
+    .navbar-nav .dropdown-menu.show {
+        display: block;
+    }
+
+    /* Optional: If you want to make the dropdown scrollable when content is too long */
+    .navbar-nav .dropdown-menu {
+        max-height: 300px; /* Set a max height for the dropdown */
+        overflow-y: auto; /* Allow vertical scrolling if the dropdown is too long */
+    }
+
+    .navbar-nav .dropdown-menu a {
+        white-space: normal; /* Allow the text to wrap within the menu items */
+    }
+}
