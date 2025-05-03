@@ -63,5 +63,9 @@ hr.solid {
     .container {
         flex-direction: column;
     }
+
+    .play{
+        display: none;
+    }
 }
 
